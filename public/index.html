@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>День Программиста</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #0d6efd;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #007bff;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #0056b3;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+            color: #0d6efd;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        footer {
+            background-color: #0d6efd;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Адаптивность */
+        @media(max-width: 768px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>День Программиста</h1>
+        <p>Празднование с конкурсами, техникой и вкусным обедом!</p>
+    </header>
+
+    <nav>
+        <a href="#tech">Техника</a>
+        <a href="#contests">Конкурсы</a>
+        <a href="#lunch">Обед и Время Мероприятия</a>
+        <a href="#organizers">Организаторы</a>
+    </nav>
+
+    <section id="tech">
+        <h2>Техника на мероприятии</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://black-forest-labs-flux-1-schnell.hf.space/file=/tmp/gradio/0f4234cc7e9480cc291708a0c8fa8788007566db/image.webp" alt="Лаптоп" />
+                <div class="card-body">
+                    <h3>Ноутбуки & ПК</h3>
+                    <p>Современная техника для комфортной работы и развлечений.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://image.pollinations.ai/prompt/Fuck%20me%20a%20powerful%20photo%20associated%20with%20computer%20mice%20and%20keyboards?width=1024&height=1024&seed=57473983&model=flux&nologo=true" alt="Периферия" />
+                <div class="card-body">
+                    <h3>Геймерские мыши и клавиатуры</h3>
+                    <p>Лучшие устройства для профессиональных и любительских задач.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="data:image/jpeg;base64,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" alt="Облако" />
+                <div class="card-body">
+                    <h3>Облачные сервисы</h3>
+                    <p>Хранение и обработка данных в облаке для быстрого доступа.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contests">
+        <h2>Конкурсы</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://image.pollinations.ai/prompt/Take%20a%20picture%20of%20code%20in%20the%20visual%20studio?width=1024&height=1024&seed=218278349&model=flux&nologo=true" alt="Кодинг" />
+                <div class="card-body">
+                    <h3>Лучший код</h3>
+                    <p>Напишите лучший алгоритм за ограниченное время.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://black-forest-labs-flux-1-schnell.hf.space/file=/tmp/gradio/e2abda31c033eff24ff6fa145ae2c948625331f5/image.webp" alt="Хакатон" />
+                <div class="card-body">
+                    <h3>Хакатон</h3>
+                    <p>Создайте инновационный проект за 24 часа.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://black-forest-labs-flux-1-schnell.hf.space/file=/tmp/gradio/7f16459c8fe2b4c67a97f2207a6d74671b763a42/image.webp" alt="Креатив" />
+                <div class="card-body">
+                    <h3>Креативные идеи</h3>
+                    <p>Представьте свою уникальную разработку.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="lunch">
+        <h2>Обед и Время Мероприятия</h2>
+        <p style="text-align:center; font-size:1.2em;">Мероприятие пройдет 21 мая 2025 года с 10:00 до 18:00. Обед будет сервирован с 13:00 до 14:00. Ждем вас!</p>
+        <div style="text-align:center;">
+            <img src="https://image.pollinations.ai/prompt/Take%20a%20photo%20of%20lunch%20on%20the%20background%20of%20computers%20with%20codes%20for%20sites?width=1024&height=1024&seed=45094380&model=flux&nologo=true" alt="Обед" style="max-width:100%; height:auto; border-radius:10px; margin-top:20px;">
+        </div>
+    </section>
+
+    <section id="organizers">
+        <h2>Организаторы</h2>
+        <p style="text-align:center; font-size:1.2em;">Проект реализуют:</p>
+        <ul style="list-style:none; display:flex; justify-content: center; gap: 50px; padding:0;">
+            <li style="text-align:center;">
+                <h3>Магомедов</h3>
+                <p>Главный организатор</p>
+            </li>
+            <li style="text-align:center;">
+                <h3>Алиев</h3>
+                <p>Главный организатор</p>
+            </li>
+        </ul>
+        <div style="text-align:center; margin-top:20px;">
+            
+
+    <footer>
+        <p>&copy; 2025 День Программиста. Все права защищены.</p>
+    </footer>
+</body>
+</html>
